@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personalizando links</title>
+    <style>
+        /* = ID
+        .  = Class
+        :  = pseudo-class
+        :: = pseudo-element
+        >  = children
+        */
+       body {
+        font-family: Arial, Helvetica, sans-serif;
+       }
+       
+       a {
+            color: #141c61;
+            text-decoration: none; /* aqui vc usa para tirar o sublinhado de baixo do link, que normalmente o link ja vem com as palavras sublinhadas. */
+            font-weight: bold;
+            
+
+        }
+        a:visited {
+            color: red; /* aqui no caso usamos os dois pontos para usar a pseudoclasse, usamos aqui a visited para quando o usuário já tiver visitado os site antes, então esse link vai mudar de cor, normalmente ficria rocho, mas podemos modificar desta forma.*/ 
+            
+        }
+        a:hover {
+            text-decoration: underline; /* agora usando a pseudoclasse hover faço com que quand eu passar o mouse em cima da palavra o sublinhado aparece, mas é claru que devo usar o text-decortation: underline; */
+            color: black; /* quando passa o mouse em cima vai ficar preto também. */
+        }
+     
+        p {
+            text-decoration: underline; /* aqui vc usa para deixar o texto sublinhado */
+           
+        }
+        a:active {
+            color: green; /* quando eu clicar em cima do link vai ficar verde no momento que eu clicar apenas. posso usar isso em tudo, até na queles quadrados*/
+        }
+        /* para usar o pseudoelemento é preciso usar dois pontos, duas vezes. :: e pseudoclasse é apenas uma vez os dois pontos : */
+        a::after{   /* after que dizer depois, então o que eu colocar aqui vai ficar depois */
+            content: '←'; /* content significa conteúdo */ /* Ou seja esse contéudo irá ficar depois  de td que estiver dentro da minha tag A que no caso são os links */
+            font-weight: normal;
+            text-decoration: none; /* tudo que eu modifico aqui, apenas modifico o conteúdo ali que é o link*/
+        }
+        a::before {
+            content: '→' ;
+        }
+        p::after {
+            content: 'lindo';
+            font-weight: bolder;
+            color: blueviolet; /* depois do meu paragrafo apareceu uma tag escrito lindo de rocho*/
+        }
+        p::before { /* before quer dizer ANTES então esse conteúdo irá aparecer antes do meu parágrafo.*/
+            content: '✽';
+        }
+
+        #erik::after {
+            content: '❤';
+            color: blueviolet;
+
+        }
+        #erik::before {
+            content: '❤';
+            color: blueviolet;
+        }
+        #especial {
+         color: darkgreen;
+         font-weight: lighter;
+         background-color: darkgray;
+         text-shadow: 01px 01px 01px darkgreen;
+    
+               }
+        
+        .especial::before{
+            content: '❤';
+            color: blueviolet;
+             }  
+        .especial::after {
+            content: '❤';
+            color: blueviolet;
+        }
+       
+        </style>
+    </head>
+<body>
+    <h1>personalizando links</h1>
+    <ul>
+        <li><a href="pseodoclasses.html" target="_blank">inicio</a></li>
+        <li><a href="https://www.facebook.com/erik.reis.73"target="_blank"class="especial" id="especial">facebook</a></li>
+        <li><a href="https://www.youtube.com/channel/UCnE8y_Wmjw-K4FzkfQIdddw"target="_blank">youtube</a></li>
+        <li><a href="https://www.twitch.tv/erikarthurbia"target="_blank">twitch</a></li>
+        <li><a href="https://www.facebook.com/carolineferreira"target="_blank">sei la </a></li>
+        <li><p>erik </p></li>
+          </ul>
+          <p id="erik">ERIK E CARINE</p>
+</body>
+</html>

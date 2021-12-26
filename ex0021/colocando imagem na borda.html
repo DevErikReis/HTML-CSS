@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordas personalizadas</title>
+    <style>
+        h1 {
+            padding: 10px;
+            border: 20px solid transparent ; /*você pode acrescentar essa “transparent”no lugar da cor(lembrando que você pode colocar a cor ai na borda, mas pelo que vi não influencia em nada na cor da borda deposi que vc acrescenta sua foto com as tags abaixo.) por que tem navegadores que não funcionam essas bordas doidas ai.*/
+            /*border-image-source: url('borda.png'); /* essa tag serve para você colocar sua foto como borda.*/
+            /*border-image-slice: 20%; /* esssa tag usa sua foto e da uns efeito doido nela*/
+            /*border-image-repeat: stretch; /* essa faz outras coisas doidas com sua foto, só que diferente da de cima, as duas juntas da uma coisa mais doida ainda*/
+            border-image: url('borda.png') 27 stretch; /* esse é a nossa forma de usar as 3 tags acima simplificando nosso código, isso faz com que vc use menos códigos. */
+            
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>teste de borda</h1>
+
+    
+</body>
+</html>

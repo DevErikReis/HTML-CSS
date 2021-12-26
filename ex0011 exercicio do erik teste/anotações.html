@@ -1,0 +1,14 @@
+<img src="imagens/P.png.png" alt="imagem flexível">
+        <source media="(min-width: 750px )" srcset="imagens/M.png.png" type="image/png">       
+        <source media="(min-width:950px )" srcset="imagens/G.png.png" type="image/png">
+        Aqui eu mudei a sequencia pra ficar melho o entendimento, a Min você tem que raciocinar que é da tela menor e você vai aumentanto, entao quando ela esta menor, ela esta abaixo de 750px, quando vc for aumentando, a imagem vai ficar maior exatamente quando vc utrapassar  750px, ela vai ficar na imagem M e depois quando chegar passar de 950px vai ficar com a foto G que é a maior. 
+
+
+        <img src="imagens/G.png.png" alt="imagem flexível"> 
+        <source media="(max-width: 950px )" srcset="imagens/M.png.png" type="image/png">          
+        <source media="(max-width:750px )" srcset="imagens/P.png.png" type="image/png">
+Aqui você esta com a tela cheia, ou seja, esta com a foto G ativa, e agora vc vai diminuindo essa foto, quando ela chegar em 950px vc reduzindo, a imagem que vai aparecer é a M, vc abaixando mais de 750px será a P que vai aparecer.
+imagine sua pagina aberta, quando esta em tela cheia e acima dos 950px quando vc diminuir ela e a pagina atingir menos de 950px, 949px por exemplo a imagem que vai aparecer será a imagem M, quando atingir menos de 750px vai carregar a foto P. Agora ao contrário, caso você for aumentando a tela, na tela pequena com menos de 750px ela esta com a foto P, se vc aumentar pra 751px por exemplo será carregada a foto M e quando chegar nos 951px ira ser carregada a G. 
+acima de 950px fica a G e entre 949 e 750 fica a M e abaixo de 750px fica a P
+
+verifica que para usa o min temos que  utilizar do maior para o menor seguindo a estrutura, e se for o max, será do menor pro maior.

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+</head>
+<style>
+    h1 {
+        background-color: #6f6fda;
+        height: 300px; /* altura da minha caixa*/
+        width: 300px; /* largura da minha caixa*/
+        border-width: 10px; /* aqui é a borda e a largura da borda "width" */
+        border-style: outset; /* bom pelo que percebi aqui eu coloco o tipo da borda*/
+        border-color: blue;/* aqui eu coloco a cor da minha borda*/
+        
+        padding-top: 10px; /* cima */       
+        padding-right: 10px; /* direita*/
+        padding-left: 10px; /*esquerda*/ /* o padding é o espaço entre a borda e o conteúdo.*/
+        padding-bottom: 10px; /* baixo*/
+    }
+    a { border-style: dashed;
+        border-width: 5px;
+        border-color: blueviolet;
+        padding-left: 10px; /*esquerda*/
+        padding-top: 10px; /* cima */
+        padding-bottom: 10px; /* baixo*/
+        padding-right: 10px; /* direita*/
+        /* faça sempre nessa sequência, é como se fosse um ponteiro de relogio girando para direitoa, você ira entender abrindo o devtools */
+        
+    }
+    
+</style>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>parágrafos tambpem são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level.</a> vamos ver como tudo isso funciona.</p>
+    
+</body>
+</html>

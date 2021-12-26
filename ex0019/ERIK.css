@@ -1,0 +1,65 @@
+@charset "UTF-8"; /* essa regra serve para quando eu trabalhar com estilos externos, serve para não termos problemas com acentuações e caracter especiáis.*/
+@import url('https://fonts.googleapis.com/css2?family=Estonia&display=swap');
+/* tudo que em HTML é ID =  em CSS é # ( só pode um elemento)*/ 
+ /* tudo que em HTML é class = em CSS é . (pode em vários elementos)*/
+
+
+body{
+    background-image: linear-gradient(to top right,#929292 60%, #e6d7d7);
+
+    font-family: 'Estonia', cursive, Arial, Helvetica, sans-serif; 
+    width: 700px; /* essa tag serve para você impor um limite, separando seu conteúdo da outra parte da mesma página do site.*/
+    margin: auto; /* essa tag serve para centralizar seu conteúdo*/
+    border-radius: 25px;/* com essa tag você aredonda o fundo do seu conteúdo, você vai controlar a quantidade em px ou em % mas aqui mesmo no próprio body não funcionau, mas usando por exemplo ali no meu h1 funciona*/
+    padding: 50px; /* essa tag serve para dar um espaço entre o limite que vc colocou e o conteúdo.*/
+}
+
+h2 {
+    font-family: 'Estonia', cursive, Arial, Helvetica, sans-serif; 
+    font-size: 3em;
+    background-color: #0404af;
+    color: cornsilk;
+}
+    
+    
+
+
+h1 {
+    font-family: 'Estonia', cursive, Arial, Helvetica, sans-serif; 
+    background-color: #0404af;
+    font-size: 3em;
+    color: cornsilk;
+    border-radius: 25px;
+}
+
+p {
+    text-align: justify;
+    font-size: 30px;
+    color: cornsilk;
+}
+main {
+    background-color: #525252; /* perceba que essa tag main serve para eu modificar apenas o conteúdo que esta dentro dela, e nada mais que isso, no body eu mudei o fundo do site todo, mas que montei um conteúdo central que eu coloquei uma cor de fundo diferente. */
+}
+h1#erik {
+    font-family: 'Estonia','Franklin Gothic Medium', 'Arial Narrow', Arial, serif;
+    font-size: 4em;
+    text-decoration: underline;
+    text-shadow: 4px 3px 3px  darkgrey;
+    }
+    .básico {
+        color: black;
+        font-weight: bolder;
+    }
+    .intermediário {
+        color: darkolivegreen;
+        font-weight: bolder;
+    }
+    .avançado {
+        color: darkred;
+        font-weight: bolder;
+    }
+    .destaque{
+       
+        background-color: blanchedalmond;
+    }
+    /* Além de eu poder fazer tudo isso acima, eu posso usar duas classe em um elemento só*/

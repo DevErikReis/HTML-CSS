@@ -1,0 +1,40 @@
+@charset "UTF8-8"; /* essa regra serve para não termos problemas de compatibilidades com carácteres especiais dentro das minhas CSS.*/    {
+        height: 100%;
+        
+        font-family: Arial, Helvetica, sans-serif;
+     
+    }
+    body {
+
+        font-family: Arial, Helvetica, sans-serif; /* essa tag serve para mudar o tipo de letra que você esta usando, você mudando a fonte*/
+        background-image: linear-gradient(to right,#003F63 33%,#0080a0,#666161);  /* essa tag só serve se vc for usar mais de uma cor*/
+    }
+    p {
+        text-align: justify; /* essa tag ajusta seu texto, caso o texto não esteja alinhado*/
+        font-size: 20px; /* essa tag serve para você definir o tamanho de suas letras */
+     
+    }
+    main {
+        background-color: white;
+        width: 600px; /* essa tag serve para você impor um limite, separando seu conteúdo da outra parte da mesma página do site.*/
+        padding: 30px; /* essa tag serve para dar um espaço entre o limite que vc colocou e o conteúdo.*/
+        margin: auto; /* essa tag serve para centralizar seu conteúdo*/
+        border-radius:20px; /* com essa tag você aredonda o fundo do seu conteúdo, você vai controlar a quantidade em px*/
+        box-shadow: 0px 0px 300px #000d14; /* essa tag serve para colocar uma sombra no fundo do nosso conteúdo, da pra colocar a cor também, o primeiro px joga a sombra pro lado direito, o segundo pra baixo e o terceiro pra cima,mas também expande para as laterais, o último parametro é a transparencia, é basicamente a cor que você vai colocar .*/
+
+        }
+    h1 {
+       color: rgb(36, 2, 2); /* essa tag serve para mudar a cor de suas letras*/
+       text-align: center; /* essa tag serve para colocar o seu texto do lado que você quizer, aqui no caso estou colocando meu título no centro.*/
+       box-shadow:10px 10px 10px rgb(11, 11, 143); /* Aqui nesse caso coloquei também uma sobra em meu h1. */
+       font-family: 'Times New Roman', Times, serif;
+       background-color: #045888; /* essa tag serve para colocar cor no fundo, por baixo das letras, no fundo do site. Serve para quando voê for usar apenas uma cor, para duas cores é a tag background-image linear-gradient.*/
+       text-shadow: 02px 02px 02px ; /* essa tag serve para você colocar o fundo na letra, é uma sobra no fundo da letra, igual a box shadow, mas aqui vc faz na letra */  
+    }
+    h2 {
+        
+        color: #000000;
+        text-shadow: 10px 10px 10px ;
+        background-color: #05208a;
+    }
+    }

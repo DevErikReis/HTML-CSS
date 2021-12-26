@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modelo de caixas</title>
+    <style>
+        h1 { /*box-level*/
+            /*padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px; */
+            /* faça nessa ordem que vai dar certo a simplificação.*/
+            /* -> padding: 10px 10px 10px 10px; <-/* nesse caso todas são iguais, ou seja, podemos implificar mais ainda colocando apenas padding:10px, isso vai significar para o code que os 4 angulos então em 10 px.*/
+            /*Caso você coloque 
+            padding; 10px 20px a altura fica 10 e a largura fica 20*/            
+            padding: 10px 20px ; /* isso vai significar para o code que os 4 angulos então em 10 px caso vc deixe o paddin apenas com um valor "padding: 10px;"*/
+
+            background-color: blue;
+           
+            /*border-width: 10px;
+            border-style: solid;
+            border-color: cadetblue;*/
+            /* faça nessa ordem que vai dar certo a simplificação.*/
+            border: 10px solid cadetblue; /* simplifiquei*/
+            /*essas duas tags fazem o meu h1 virar aquela caixa, é como que eu criasse um limite e o h1 ocupasse o limite todo tem ultrapassa-lo*/ 
+            width: 300px;
+            height: 300px;
+            
+            /*essa tag deixa minha caixa no centro margin: auto;*/
+            /*margin-top: 20px;
+            margin-rigth: 20px;
+            margin-bottom: 50px;
+            margin-left: 20px;*/
+            /*margin: 20px 20px 50px 20px;*/ /* essa é a simplificação, deve ficar nessa mesma sequencia*/
+            margin: 20px auto 50px auto; /* dessa forma, minha margin da esquerda e a da direita vão ficar centralizadas e os valores da top e do bottom vão ficar com o mesmo tamanho.*/
+            
+            
+            /*outline-width: 10px;  /* aqui é a largura */
+            /*outline-style: groove; /* aqui é o estilo do outline*/
+            /*outline-color: crimson; /* aqui é a cor */
+            /* o outline fica entre a margem e a borda */
+            outline:10px groove crimson; /* deixe sempre nessa ordem que dará certo*/
+
+
+
+        }
+        a { /*inline-level*/
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            background-color: rgb(161, 161, 212);
+
+          
+            border-width: 10px;
+            border-style: solid;
+            border-color: cadetblue;
+                           
+                }
+             
+    </style>
+</head>
+<body>
+      
+   <h1>exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box- level, mas os <a href="#"> os links são exemplos de caixas inline-level</a> vamos ver como tudo isso funciona.</p>
+    
+    
+</body>
+</html>

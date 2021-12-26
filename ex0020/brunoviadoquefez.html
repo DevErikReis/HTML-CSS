@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <style>
+
+
+        a:hover {
+            background:  cadetblue;
+            color: cornsilk;
+        }
+
+        a:hover {
+            background:  rgb(163, 161, 31);
+            color: cornsilk;
+            /*O último hover tem prioridade, pois o CSS é lido de cima para baixo*/
+        }
+
+        div a:hover {
+            font-size: 2rem;
+            background: darkgreen;
+            color:darkorange;
+/* 
+            Aqui o hover não tem prioridade sobre as outras, pois coloquei a 
+            div antes, ou seja, aumentei a especividade */
+        }
+
+    </style>
+    
+</head>
+<body>
+    <a href=""> Clique aqui</a>
+    <div>
+        <a href=""> Clique aqui tbm </a>
+    </div>
+</body>
+</html>

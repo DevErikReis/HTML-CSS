@@ -1,0 +1,108 @@
+    body{
+    
+        background-image: linear-gradient(to left,#929292 , #d6d5d5, #e3e3e9); 
+        font-size: 14px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: 700px;
+        margin: auto;
+        border-radius: 20%;
+        padding: 50px 20px;
+        border: 20px;
+    }
+    h1 {
+
+        font-style: italic;
+        box-shadow: inset 1px 0px 17px 0px;
+        text-shadow: 1px 1px 0px #0402077a; /* meu text shadow tem apenas 3 valores e o meu box shadow tem 4*/
+        display: inline;
+        
+    }
+        header {
+            border-radius: 20px;
+            background-color: rebeccapurple;
+            padding: 10px;
+            margin:10px
+        
+        }
+    /* a { (estou deixando esssa tag desativada para treinar um outro modo de usar a tag NAV  e a tag A, por que a tag A  está dentro da NAV. 
+            background-color: rgb(4, 2, 7);
+            display: block; /* essa tag é inline level, trans transformei ela em box level, porém os lins não ficaram um ao lado do outro.
+            font-size: larger;
+            text-shadow: 10px 10px 10px blue;} */
+        
+        main{
+            box-shadow: 2px 0px 20px 17px rgb(66, 3, 3);
+            border-radius: 25px 10px 10px 10px ;
+            
+            background-color: #040207;
+            padding: 10px;
+            margin:10px
+            
+        
+        }
+        p {
+            color: #050572;  
+            
+
+        }
+        footer {
+            text-align: center;
+            text-decoration: underline;
+            background-color: blue;
+            font-size: larger;
+            font-style: oblique;
+            font-weight: bolder;
+            padding:5px 2px
+        }
+        footer > p{
+            margin:0px;
+        }
+
+
+        article {
+            box-shadow: 2px 0px 20px 17px;
+            border-radius: 10px 10px 10px 10px;
+            background-image: linear-gradient(to left, #5c5353, #474444,black);
+            color: blueviolet;
+            padding: 2px ;
+
+            
+        }
+        .erik {
+            color: blueviolet;
+        }
+        nav {
+        background-color: red;
+        padding: 5px;
+        box-shadow: inset -4px 1px 7px 8px black;  /* o primeiro px joga a sombra na horizontal, o segundo é o deslocamento vertical, o penúltimo  é espalha deixando a sobra levemente mais fraca, o último é espalha mas deixando a sobra escura., o último é a cor */      
+        }
+    nav > a {
+    text-decoration: none; /* colocando none no tex dec... eu retiro toda a decoração da minha tag.*/
+    color: black;
+    font-weight: bolder;
+    margin-right: 50px; /* essa tag cria uma margem em entre uma palavra e a outra, como dentro da nossa tag nav temos a tag A e estamos modificando justamente elas, vai ser criado uma margem entre elas e então vão ficar separadas.*/
+
+    }
+    nav > a:hover {
+        text-decoration: underline;
+        color: seagreen;
+        text-shadow:10px 10px 10px seagreen;
+    }
+    .erik03 {
+        
+        font-style: italic;
+        box-shadow: inset 1px 0px 17px 0px;
+        text-shadow: 1px 1px 0px #0402077a; /* meu text shadow tem apenas 3 valores e o meu box shadow tem 4*/
+    }
+
+    .centraliza {
+        text-align: center;
+    }
+    .bola {
+        height: 100px;
+        width: 100px;
+        background-color: black;
+        border-radius: 50%; /* colocando essa tag você arredonda totalmente sua borda, vira um circulo*/
+        margin: 10px;
+        padding: 100px; /* a bola ficou gigante depois de eu aumentar o padding*/
+    }

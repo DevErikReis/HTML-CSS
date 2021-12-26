@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <style>
+        div:hover > p {
+            display: block;
+            color: darkblue; /* aqui eu usei pseudoclasse*/
+        }   
+        #erikdiv:hover {
+            color: darkviolet; /* aqui eu usei ID */
+            
+        }
+
+        div > p { /*  o > significa que o P que no caso é a tag, é o filho, ou seja,  o div tem um filho que é o paragrafo.*/
+
+            display: none; /* a tag display da pra escolher fazer outras coisas, escolhendo NONE, faz coom que essa tag suma do site*/
+            /* ou seja, toda a tag que tiver uma div e dentro da div tiver uma tag P, o que estiver dentro da tag P irá desaparecer*/
+        }
+        div:hover > p { 
+            display: block; /* usando as duas tags juntas, vai fazer com que quando eu passar o mouse por cima a frase vai aparecer. */ 
+            background-color: chartreuse;
+            width: 500px;
+        }
+    </style>
+    
+</head>
+<body>
+<h1>exemplo de hover</h1>
+
+        
+        <p>passe o mouse sobre o texto a baixo</p>
+  
+    
+  <a href="pseodoclasses.html"><div>clique aqui para voltar a pagina</div></a>
+  <br>
+  <div id="erikdiv">Erik lindo</div>
+  <br>
+
+
+
+  
+  <div>essa frase irá desaparecer, por que essa tag p esta dentro da tag div e  eu programei pra isso accontecer.
+      <p>TEXTO ESCONDIDO</p></div>
+  <br>
+
+
+  <a href="teste.html">Clique aqui para acessas a página de teste.</a>
+</body>
+</html>

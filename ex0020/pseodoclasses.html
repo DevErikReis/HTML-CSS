@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo-classes</title>
+    <style>
+        div{
+            background-color: #b9afaf;
+            color: black;
+            text-shadow: 02px 02px 02px;
+            text-align: center;
+            height: 200px; /* essa tag significa altura*/
+            width: 200px;/* essa tag significa largura */
+            border: 1px solid black; /* o primeira px ali é a largura, o solid é o tipo, e o black seria a cor da borda (lembrando que essa tag também fez nascer bordas quadradas.*/
+            display:  inline-block; /* essa tag faz com que fique tudo na mesma linha */
+        }
+       
+        div:hover { /* essa tag faz com que eu consiga colocar uma cor nesse elemento, então quando eu passar o mouse por cima esse elemento irá mudar de cor.*/
+            background-color: darkblue; /* eu escolhi essa cor*/
+        }
+        h1:hover {
+         color: darkblue;
+        }
+        div:active {
+            color: greenyellow;
+        }
+    
+        
+    </style>
+</head>
+<body>
+    <a href="link.html">página do link</a>
+    <br>
+    <div>01</div>
+    <div>02</div>
+    <div>03</div>
+    <!--
+        essa tag div ocupa alinha inteira sempre,mesmo se vc coloca algo que não ocupa a linha inteira.
+        # é ID
+        . é Class
+         : são Pseudo-classes. As Pseudo-classes está relaciondo ao estado  de um determinado elemento, o elemento pode estar ativo, marcado, habilitado e etc... você consegue configuar o estado.
+    -->
+    <a href="hover.html"> <br> clique aqui</a>
+    <h1>Passe o mouse aqui</h1>
+</body>
+</html>
