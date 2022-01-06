@@ -8,7 +8,13 @@
     <style>
         body
         {
-            background-image: url('imagens/wallpaper006.jpg');
+            background-image: url('https://cdn.pixabay.com/photo/2021/09/07/07/11/joysticks-6603119_960_720.jpg'); /* lembre-se que usando dessa forma, caso o autor  tire essa imagem da internet, ela vai ficar indisponível em seu site. */
+            background-size: 1500px 1200px; /* com essa tag eu configuro o o tamanho da imagem que coloquei no fundo do meu body, eu fui la no site e vi qual o tamanho e aumentei um pouco, então deixei o tamanho de 1500 e a largura de 1200. lembre-se que ela pode perder um pouco da qualidade por ter aumentado o tamanho. */
+            background-repeat: no-repeat; /* o background normalmente sempre vai alterar o fundo do conteúdo, essa tag faz outras coisas, mas colocando no-reapet, irá fazer com que sua imagem não se repita, por que como a tela de um pc por exemplo normalmente ela tem uma altura e largura  de 1600 px pra cima, então se ela não for desse tamanho ela irá repetir para preencher o espaço e você pode impedir que isso aconteça com essa tag.*/
+            /* o reapet-x faz sua imagem repetir da vertical, o reapet-y faz na horizontal, faça o teste no seu exercício. lembrando que o ponto de partida é sempre no canto superior esquerdo, da pra mudar isso? da sim.*/
+        }
+        h1{
+        color: aliceblue;
         }
     </style>
 </head>
