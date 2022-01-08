@@ -4,27 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fundos</title>
+    <title>fundos fixo de tela</title>
     <style>
         body  {
-            height: 97vh;
-            background-color: black;
+           
+           /*background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-size: cover; /* essa tag vai fazer aparecer a imagem toda, a imagem de fundo vai cobrir tudo, porém a imagem não vai aparcer inteira, irá aparecer somente vc deixar a tela maior ou inteira, a imagem vai ocupar 100% da viewport.
             /*background-size: contain; /* colocando a opção contain faz com que a imagem seja exibida inteira independente do tamanho da tela, mas não resolve nosso problema, por que quando aumenta a tela essa imagem vai ficsar maior, mas quando vc diminuir o tamanho da sua tela, essa imagem vai ficar muito pequena.*/
-            background-position: center center ;
+          /*background-position: center center ;
             background-repeat: no-repeat;
+            background-attachment: fixed; /* Essa tag do background com o fixed faz com que quand você role a tela o fundo fique fixo e somente o nosso conteúdo se mexa. E quando vc escole scroll a barra se meche junto com o conteúdo, algo que ja acontece normalmente sem tag.*/
             
+            /*shorthand - background 
 
-
+            vai ser executada nessa ordem
+            color > image > position >  reapet > [size] > attachment.*/
+            /* há um problema, o size  não está funcionando, então para dar tudo certo apenas tiramos o size de nossa shorthand*/ 
+            height: 97vh;
+            background: black url('imagens/wallpaper002.jpg') center center  no-repeat  fixed;
+            background-size: cover; 
+            /* segundo a especificação do W3C os back ground size está exatamente assim, era pra funcionar, mas fazendo os testes não funcionou.
         }
         main {
             background-color: white;
-            width: 400px; /* o tamanho máximo será de 400px */
+            max-width: 500px; /* o tamanho máximo será de 400px, antes estava apenas o width, agora com o max width quando a tela está grande o maximo que meu conteúdo chega é 500px, quando eu minuo ela, o conteudo diminui a largura também.Como eu não determinei um tamanho mínimo, irá diminuir de acordo com o tamanho da tela do aparelho.*/
             padding: 10px;
             margin: auto; /* essa tag é para centralizar nosso conteúdo */
-           border: 2px solid goldenrod; 
-           border-radius: 15px;
+            border: 2px solid goldenrod; 
+            border-radius: 15px;
 
         }
     </style>
