@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        body{
+        font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+        border: 10px solid blueviolet;
+        width: 400px; /* aqui você aumentou o tamanho da tabela, conseguentemente irá aumenta o tamanho de cada um dos TD.*/
+        border-collapse: collapse; /* caso eu coloque separate as bordas vão ficar com uma separação, e isso não serve apenas para tabelas... colocando collapse elas ficam sem o espaço que é o que desejo. Depois que coloquei essa tag, a minha borda que coloquei na tag de cima, a table até desapareceu, que no caso era a borda que ficava em volta de todo o conteúdo, na verdade parecia que tinha sumido, após eu mudar a cor e aumentar o tamanho da pra ver que ela ainda continua ali. */
+        }
+        table#normal {
+            border: 1px solid black;
+        }
+        td {
+        border: 1px solid white; /* aqui foi colocado borda em cada um dos TD, que são dos dados que estão em cada uma das linhas. */
+        padding: 7px;         
+        }
+        td.linha{
+            border: 1px solid black; 
+        }  
+        td.amarelo {
+            background-color: yellow;
+            color: blue;
+        } 
+        td#normal {
+            border: 1px solid black;
+        }
+        /* aqui observe que quando eu coloco a borda na tag table, essa borda fica em volta do conteúdo inteiro, mas quando eu coloco na tag TD ela fica em volta de cada um dos elementos, a1, b1 ,c1 etc.. você pode deixar a borda apenas no td se desejar. */
+        tr { /* TR é a minha linha de tabela, dentro dela estão os dados "td". */
+        color:aliceblue; /* mudou a cor das letras */
+        background-color: black; /* deixou a cor de cada td preto*/
+        }
+        tr.linha {
+            background-color: white;
+            color: black;            
+        }
+        tr#normal {
+            background-color: white;
+            color: black;
+                }
+        </style>
+        
+</head>
+<body>
+    <h1>minha primeira tabela</h1>
+    <!--HIERARQUIA DE TABELAS  (simples)
+    TABLE = tabela
+        TABELA ROW  = linha de tabela  (tag: tr)
+        TABLE HEADER = cabeçalho de tabela (tag: th)
+        TABLE DATA = dado de tabela (tag td)
+
+    -->
+    <table>
+        <tr> <!--Primeira linha, todo conteúdo que estver aqui dentro do tr vai fazer parte desta linha.-->
+            <td>A1</td>
+            <td>B1</td>
+            <td class="amarelo">C1</td>
+        </tr>
+        <tr class="linha"> <!-- segunda linha -->
+            <td class="linha">A2</td>
+            <td class="linha">B2 <!-- de acordo com w3c não é necessario o fechamento da tag td, vc pode fechar ou não, fica ao seu critério. mas se eu tirar o TD   o conteúdo que tiver na frente vai entrar dentro da ultima TD colocada.-->
+            <td class="linha">C2
+        </tr>
+        <tr><!-- teceria linha -->
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr> <!--quarta linha-->
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+        <tr> <!--Crio uma linha e coloco o conteúdo dentro, é assim que se faz tabela no html5 e css3.-->
+            <td>R5</td>
+        </tr>
+        <td>L7</td>
+    </table><br>
+    <table id="normal"> 
+        <tr id="normal"> <!--Primeira linha, todo conteúdo que estver aqui dentro do tr vai fazer parte desta linha.-->
+            <td id="normal">A1</td>
+            <td id="normal">B1</td>
+            <td id="normal">C1</td>
+        </tr>
+        <tr id="normal"> <!-- segunda linha -->
+            <td id="normal">A2</td>
+            <td id="normal">B2</td>
+            <td id="normal">C2</td>
+        </tr>
+        <tr id="normal"><!-- teceria linha -->
+            <td id="normal">A3</td>
+            <td id="normal">B3</td>
+            <td id="normal">C3</td>
+        </tr>
+        <tr id="normal"> <!--quarta linha-->
+            <td id="normal">A4</td>
+            <td id="normal">B4</td>
+            <td id="normal">C4</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
