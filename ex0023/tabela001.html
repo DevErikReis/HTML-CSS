@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        body{
+        font-family: Arial, Helvetica, sans-serif;
+        }
+       table {
+        width: 500px;
+        height: 500px;
+        border-collapse: collapse;
+        text-align:left ; /*alinhamento horizontal */
+      
+       }
+       td {
+        vertical-align: top; /*Com essa tag você pode determinar ondeo texto fica, faça o teste. (alinhamento vertical e no centro use o middle). Meu text-aling funciona la em cima no table, porem o nosso vertical- align funcinoa apenas aqui no td, não sei por que, poderia normalmente usar o text-align aqui normalmente, e usaria o vertical-align e o text-align aqui. */
+        border: 1px solid black;
+        padding: 8px        
+       }
+       td.numero {
+           text-align: right; /* normalmente no excel os números ficam sempre a direita, então só configurei assim para parecer o excel, mas você pode deixar como quizer*/
+       }
+        </style>
+        
+</head>
+<body>
+    <h1>minha primeira tabela</h1>
+    <!--HIERARQUIA DE TABELAS  (simples)
+    TABLE = tabela
+        TABELA ROW  = linha de tabela  (tag: tr)
+        TABLE HEADER = cabeçalho de tabela (tag: th)
+        TABLE DATA = dado de tabela (tag td)
+
+    -->
+  <table>
+        <tr> <!--Primeira linha, todo conteúdo que estver aqui dentro do tr vai fazer parte desta linha.-->
+            <td class="numero">300</td> <!--fala 300 fala-->
+            <td>b1</td>
+            <td>C1</td>
+        </tr>
+        <tr> <!-- segunda linha -->
+            <td class="numero">30.000</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr><!-- teceria linha -->
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr> <!--quarta linha-->
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
