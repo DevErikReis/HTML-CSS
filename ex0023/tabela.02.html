@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body{
+            text-align: justify;
+            font-family: 'Courier New', Courier, monospace
+            
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            
+        }
+        thead, tfoot {
+            background-color: grey;
+            color: white;
+            
+          
+        }
+        td, th {
+            border: 1px solid black;
+        }
+        th{
+            padding: 9px;
+            font-size:20px;
+        }
+        th.diferente{
+            font-size:medium;    
+
+        }
+
+    </style>
+</head>
+<body>
+    <!--HIERARQUIA DE TABELAS  (simples)
+    TABLE = tabela
+        TABELA ROW  = linha de tabela  (tag: tr)
+        TABLE HEADER = cabeçalho de tabela (tag: th)
+        TABLE DATA = dado de tabela (tag td)
+
+        ***ANATOMIA PARA TABELAS GRANDES***
+            THEAD
+                tr,td,th
+            TBODY
+                tr,td,th
+            TFOOT
+                tr,td,th
+
+            Básicamente irá ter a área da cabeça, área do corpo e a do rodapé. Normalmente não precisa ter  a cabeça e o rodapé, pode ter somente o corpo.
+    -->
+    <table>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+                <th>Porcentagem</th>
+            </tr> 
+        </thead>                   
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>41.901.219</td>
+                <td>21,60%</td>
+            </tr>
+            <td>Minas Gerais</td>
+            <td>19.855.332</td>
+            <td>10,24%</td>
+            <tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td>16.231.365</td>
+                    <td>8,37%</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td>14.175.341</td>
+                    <td>7,31%</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td>10.770.603</td>
+                    <td>5,45%</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td>10.577.755</td>
+                    <td>5,45%</td>
+                </tr>
+                <tr>
+                    <td>Pernambuco</td>
+                    <td>8.931.028</td>
+                    <td>4,60%</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td>8.606.005</td>
+                    <td>4,44%</td>
+                </tr>
+                <tr>
+                    <td>Pará</td>
+                    <td>7.792.561</td>
+                    <td>4,02%</td>
+                </tr>
+                <tr>
+                    <td>Maranhão</td>
+                    <td>6.714.314</td>
+                    <td>3,46%</td>
+                </tr>
+                <tr>
+                    <td>Santa Catarina</td>
+                    <td>6.383.286</td>
+                    <td>3,29%</td>                    
+                </tr>
+                <tr>
+                    <td>Goiás</td>
+                    <td>6.154.996</td>
+                    <td>3,17%</td>
+                </tr>
+                <tr>
+                    <td>Paraíba</td>
+                    <td>3.815.171</td>
+                    <td>1,97%</td>
+                </tr>
+                <tr>
+                    <td>Amazonas</td>
+                    <td>3.590.985</td>
+                    <td>1,85%</td>
+                </tr>
+                <tr><td>Espírito Santo</td>
+                    <td>3.578.067</td>
+                    <td>1,84%</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Norte</td>
+                    <td>3.228.198</td>
+                    <td>1,66%</td>
+                </tr>
+                <tr>
+                    <td>Alagoas</td>
+                    <td>3.165.472</td>
+                    <td>1,63%</td>
+                </tr>                
+                <td>Brasil</td>
+                <td>193.946.886</td>
+                <td>100%</td>
+            </tr>
+        </thead>
+        </tbody>
+        <tfoot>
+           <tr>
+                <th class="diferente">Total</th>
+                <td>193.946.886</td>
+                <td>100%</td>
+           </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
