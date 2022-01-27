@@ -14,7 +14,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
-            
+            margin: auto;
         }
         thead, tfoot {
             background-color: grey;
@@ -32,6 +32,9 @@
         th.diferente{
             font-size:medium;    
 
+        }
+        td.num {
+            text-align: right;
         }
 
     </style>
@@ -52,6 +55,7 @@
                 tr,td,th
 
             Básicamente irá ter a área da cabeça, área do corpo e a do rodapé. Normalmente não precisa ter  a cabeça e o rodapé, pode ter somente o corpo.
+            Algo também importante, caso você pegue o seu Tfoot e colocar no meio do seu código, ele vai continuar no mesmo lugar, que é lá embaixo, o mesmo o ocorre com tread, ele continuara no início por que é nosso cabeçalho.
     -->
     <table>
         <thead>
@@ -64,137 +68,138 @@
         <tbody>
             <tr>
                 <td>São Paulo</td>
-                <td>41.901.219</td>
-                <td>21,60%</td>
+                <td class="num">41.901.219</td>
+                <td class="num">21,60%</td>
             </tr>
             <td>Minas Gerais</td>
-            <td>19.855.332</td>
-            <td>10,24%</td>
+            <td class="num">19.855.332</td>
+            <td class="num">10,24%</td>
             <tr>
                 <tr>
                     <td>Rio de Janeiro</td>
-                    <td>16.231.365</td>
-                    <td>8,37%</td>
+                    <td class="num">16.231.365</td>
+                    <td class="num">8,37%</td> 
                 </tr>
                 <tr>
                     <td>Bahia</td>
-                    <td>14.175.341</td>
-                    <td>7,31%</td>
+                    <td class="num">14.175.341</td>
+                    <td class="num">7,31%</td>
                 </tr>
                 <tr>
                     <td>Rio Grande do Sul</td>
-                    <td>10.770.603</td>
-                    <td>5,45%</td>
+                    <td class="num">10.770.603</td>
+                    <td class="num">5,45%</td>
                 </tr>
                 <tr>
                     <td>Paraná</td>
-                    <td>10.577.755</td>
-                    <td>5,45%</td>
+                    <td class="num">10.577.755</td>
+                    <td class="num">5,45%</td>
                 </tr>
                 <tr>
                     <td>Pernambuco</td>
-                    <td>8.931.028</td>
-                    <td>4,60%</td>
+                    <td class="num">8.931.028</td>
+                    <td class="num">4,60%</td>
                 </tr>
                 <tr>
                     <td>Ceará</td>
-                    <td>8.606.005</td>
-                    <td>4,44%</td>
+                    <td class="num">8.606.005</td>
+                    <td class="num">4,44%</td>
                 </tr>
                 <tr>
                     <td>Pará</td>
-                    <td>7.792.561</td>
-                    <td>4,02%</td>
+                    <td class="num">7.792.561</td>
+                    <td class="num">4,02%</td>
                 </tr>
                 <tr>
                     <td>Maranhão</td>
-                    <td>6.714.314</td>
-                    <td>3,46%</td>
+                    <td class="num">6.714.314</td>
+                    <td class="num">3,46%</td>
                 </tr>
                 <tr>
                     <td>Santa Catarina</td>
-                    <td>6.383.286</td>
-                    <td>3,29%</td>                    
+                    <td class="num">6.383.286</td>
+                    <td class="num">3,29%</td>                    
                 </tr>
                 <tr>
                     <td>Goiás</td>
-                    <td>6.154.996</td>
-                    <td>3,17%</td>
+                    <td class="num">6.154.996</td>
+                    <td class="num">3,17%</td>
                 </tr>
                 <tr>
                     <td>Paraíba</td>
-                    <td>3.815.171</td>
-                    <td>1,97%</td>
+                    <td class="num">3.815.171</td>
+                    <td class="num">1,97%</td>
                 </tr>
                 <tr>
                     <td>Amazonas</td>
-                    <td>3.590.985</td>
-                    <td>1,85%</td>
+                    <td class="num">3.590.985</td>
+                    <td class="num">1,85%</td>
                 </tr>
                 <tr><td>Espírito Santo</td>
-                    <td>3.578.067</td>
-                    <td>1,84%</td>
+                    <td class="num">3.578.067</td>
+                    <td class="num">1,84%</td>
                 </tr>
                 <tr>
                     <td>Rio Grande do Norte</td>
-                    <td>3.228.198</td>
-                    <td>1,66%</td>
+                    <td class="num">3.228.198</td>
+                    <td class="num">1,66%</td>
                 </tr>
                 <tr>
                     <td>Alagoas</td>
-                    <td>3.165.472</td>
-                    <td>1,63%</td>
+                    <td class="num">3.165.472</td>
+                    <td class="num">1,63%</td>
                     <tr>
                         <td>Piauí</td>
-                        <td>3.160.748</td>
-                        <td>1,63%</td>
+                        <td class="num">3.160.748</td>
+                        <td class="num">1,63%</td>
                     </tr>
                     <tr>
                         <td>Mato Grosso</td>
-                        <td>3.115.336</td>
-                        <td>1,61%</td>
+                        <td class="num">3.115.336</td>
+                        <td class="num">1,61%</td>
                     </tr>
                     <tr>
                         <td>Distrito Federal</td>
-                        <td>2.648.532</td>
-                        <td>1,37%</td>
+                        <td class="num">2.648.532</td>
+                        <td class="num">1,37%</td>
                     </tr>
                     <tr>
                         <td>Sergipe</td>
-                        <td>2.110.867</td>
-                        <td>1,09%</td>
+                        <td class="num">2.110.867</td>
+                        <td class="num">1,09%</td>
                     </tr>
                     <tr>
                         <td>Tocantins</td>
-                        <td>1.417.694</td>
-                        <td>0,73%</td>
+                        <td class="num">1.417.694</td>
+                        <td class="num">0,73%</td>
                     </tr>
                     <tr>
                         <td>Acre</td>
-                        <td>758.786</td>
-                        <td>0,39%</td>
+                        <td class="num">758.786</td>
+                        <td class="num">0,39%</td>
                     </tr>
                     <tr>
                         <td>Amapá</td>
-                        <td>698.602</td>
-                        <td>0,36%</td>
+                        <td class="num">698.602</td>
+                        <td class="num">0,36%</td>
                     </tr>
+                </tr>
+                <tr>
+                    <td>Roraima</td>
+                    <td class="num">469.524</td>
+                    <td class="num">0,24%</td>
                 </tr>                
                 <td>Brasil</td>
-                <td>193.946.886</td>
-                <td>100%</td>
+                <td class="num">193.946.886</td>
+                <td class="num">100%</td>
             </tr>
-            <tr>
-                <td>Roraima</td>
-                <td>469.524</td>
-                <td>0,24%</td>
-            </tr>
+            
         </tbody>
         <tfoot>
            <tr>
                 <th class="diferente">Total</th>
-                <td>193.946.886</td>
-                <td>100%</td>
+                <td class="num"><strong>193.946.886</strong></td>
+                <td class="num"><strong>100%</strong></td>
            </tr>
         </tfoot>
     </table>
