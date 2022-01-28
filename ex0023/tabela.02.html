@@ -12,7 +12,7 @@
             
         }
         table {
-            width: 500px;
+            width: 580px;
             border-collapse: collapse;
             margin: auto;
         }
@@ -21,6 +21,9 @@
             color: white;
             
           
+        }
+        thead {
+            background-image: url('imagens/fundo.jpg');
         }
         td, th {
             border: 1px solid black;
@@ -36,33 +39,50 @@
         td.num {
             text-align: right;
         }
+        caption {
+            font-size:22px;
+            font-weight: bolder;          
+            color: white;
+           background-image: url('imagens/fundo-cinza.jpg');
+            padding: 10px;
+            text-shadow:  -2px 2px 0px black;
+}
+
+
 
     </style>
 </head>
 <body>
     <!--HIERARQUIA DE TABELAS  (simples)
     TABLE = tabela
+    CAPTION = Legenda
         TABELA ROW  = linha de tabela  (tag: tr)
-        TABLE HEADER = cabeçalho de tabela (tag: th)
-        TABLE DATA = dado de tabela (tag td)
+        TABLE HEADER = cabeçalho de tabela (titulo) (tag: th)
+        TABLE DATA = dado de tabela (dados) (tag td)
 
-        ***ANATOMIA PARA TABELAS GRANDES***
-            THEAD
+        ***ANATOMIA PARA TABELAS GRANDES*** 
+            THEAD - cabeçalho.
                 tr,td,th
-            TBODY
+            TBODY - corpo 
                 tr,td,th
-            TFOOT
+            TFOOT - rodapé
                 tr,td,th
 
             Básicamente irá ter a área da cabeça, área do corpo e a do rodapé. Normalmente não precisa ter  a cabeça e o rodapé, pode ter somente o corpo.
             Algo também importante, caso você pegue o seu Tfoot e colocar no meio do seu código, ele vai continuar no mesmo lugar, que é lá embaixo, o mesmo o ocorre com tread, ele continuara no início por que é nosso cabeçalho.
+            CAPITON- se vc colocar o caption e colocar la no final, ele vai aparecer sempre lá em cima, onde ele deve estar, é isso que a semântica faz também, organização do conteúdo, mas é claro que você deve colocar cada um em seu devido lugar, para ficar mais organizado para você ver, fica melhor para você mesmo.
     -->
     <table>
+        <caption>População das unidades federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
-                <th>Porcentagem</th>
+                <!--
+                Aqui pelo o que entendi, todos que ficarem abaixo ficaram com o tamanho que desejar, em baixo de estado 80% e assim por diante, eu defini um tamanho para cada.
+                -->
+                <th  scope="col"style="width: 80%;">Estado</th>
+                <th scope="col" style="width: 10%;">População</th>
+                <th scope="col" style="width: 10%;">Porcentagem</th>
+                <!--Aqui essas tags scope "col" é para indicar os dados sobre esse titulo, ali está estado, então todos os estados do Brasil estão abaixo. Então os dados que estão abaixo pertencem ao ESTADO. Por esse motivo coloco 'col' (cabeçalho)-->
             </tr> 
         </thead>                   
         <tbody>
@@ -197,9 +217,10 @@
         </tbody>
         <tfoot>
            <tr>
-                <th class="diferente">Total</th>
-                <td class="num"><strong>193.946.886</strong></td>
+                <th scope="row" class="diferente">Total</th>
+                <td scope="row" class="num"><strong>193.946.886</strong></td>
                 <td class="num"><strong>100%</strong></td>
+                <!-- O scope 'row' é par informar sobre os dados que estão ao lado,  o total de habitantes é 193.946.886, esse valor está se referindo ao total e vice verça, mas está ao lado por isso é usado ROW, se fosse abaixo usaria COL. Essas tags não mudam nada no seu código, más é uma informação para os agoritimos de busca. -->
            </tr>
         </tfoot>
     </table>
