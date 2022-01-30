@@ -25,6 +25,16 @@
         thead {
             background-image: url('imagens/fundo.jpg');
         }
+       
+        /* em nossa tag abaixo colocamos tbody > tr:nth-child(2n) por que não queremos que todos os TR sejam alterados, a minha ideia é apenas os que estão dentro de tbody, porém desta forma temos um número dentro dos parenteses, esse número funciona assim: (2n) a cada dois números, o segundo irá ser modíficado conforme sua configuração.Eu deixei cinza, então vai ficar, um branco e um cinza, assim por diante... */
+        tbody > tr:nth-child(odd){ /* (2n-1) /* você pode colocar (odd) dentro dessa tag, odd significa impar, e vai dar o memso efeito atual que é chamado de efeito zebrado, não vai ficar exatamente igual, por que é impar, mas o efeito será o mesmo. (odd) e (2n-1) da o mesmo efeito, (even) é par.*/
+            background-color: rgb(180, 176, 176);
+        } /* aqui nós fizemos par e impar, isso que dizer que um irá ter uma cor e o outro terá outra com, azul,cinza e depois azul e cinza e assim vai... Impar e Par.  impar é o zinza (odd) par é o azul (even).Da para colocar imagens se desejar.*/
+        tbody > tr:nth-child(even) /* (2n)*/{
+            background-color: #1e035273;
+            /* lembre-se que você pode fazer o que quizer, pode mudar a fonte, o tamanho da fonte, deixar sublinhada, configura como quiser, a configuração serve para você deixar cada um como desejar.*/
+
+        }
         td, th {
             border: 1px solid black;
         }
@@ -91,10 +101,11 @@
                 <td class="num">41.901.219</td>
                 <td class="num">21,60%</td>
             </tr>
+            <tr>
             <td>Minas Gerais</td>
             <td class="num">19.855.332</td>
             <td class="num">10,24%</td>
-            <tr>
+        </tr>
                 <tr>
                     <td>Rio de Janeiro</td>
                     <td class="num">16.231.365</td>
@@ -220,7 +231,7 @@
                 <th scope="row" class="diferente">Total</th>
                 <td scope="row" class="num"><strong>193.946.886</strong></td>
                 <td class="num"><strong>100%</strong></td>
-                <!-- O scope 'row' é par informar sobre os dados que estão ao lado,  o total de habitantes é 193.946.886, esse valor está se referindo ao total e vice verça, mas está ao lado por isso é usado ROW, se fosse abaixo usaria COL. Essas tags não mudam nada no seu código, más é uma informação para os agoritimos de busca. -->
+                <!-- O scope 'row' é para informar sobre os dados que estão ao lado,  o total de habitantes é 193.946.886, esse valor está se referindo ao total e vice verça, mas está ao lado por isso é usado ROW, se fosse abaixo usaria COL. Essas tags não mudam nada no seu código, más é uma informação para os agoritimos de busca. -->
            </tr>
         </tfoot>
     </table>
