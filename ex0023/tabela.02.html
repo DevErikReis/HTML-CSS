@@ -11,23 +11,35 @@
             font-family: 'Courier New', Courier, monospace
             
         }
+        p {
+            width: 580px;
+            margin: auto;
+        }
         table {
             width: 580px;
             border-collapse: collapse;
             margin: auto;
+            position: relative;
         }
         thead, tfoot {
             background-color: grey;
             color: white;
-            
+            /*observando nosso código, eu coloquei o theade e tfoot, mas ali em baixo eu coloquei uma fono no nosso thead, então a configuração ficou apenas no tfoot, eu poderia tirar o thead ai de cima, mas vou deixar, vai em qem algum navegador a foto não carregue. o fundo cinza vai aparecer normalmente, por que é como se estivesse em baixo.*/
           
         }
         thead {
             background-image: url('imagens/fundo.jpg');
         }
+        thead > tr > th {
+            position: sticky;
+            top:-1px; /* Quando coloco top 0, estou dizendo que ele vai colar na parte, ou seja, na parte de cima do nosso site. Ele ficou fixo, mesmo quando rola para baixo ela fica la em cima fixo. Posso trabalhar com pixel também aqui. No Chrome ficou normal, mas no Edge por exemplo, ficou uma leve separação entre o começo do site e a barra do cabeçalho, então para corrigir isso deixei com -1px. fiz um teste e se você deixar 12px por exemplo a separação fica bem grande e vioê consegue ver o fundo por que meio que o nosso cabeçalho ali desce, caso você coloque 70px o cabeçalho fica fixo no meio da tela. Ficoi bom com 1px;*/
+            background-image: url('imagens/fundo.jpg');
+            /* agora com o fundo da nossa tag, quando você desce a página fica la o estado, população e a porcentagem no topo da tela, você pode rolar para baixo que ela ainda continua fixo. */
+            /* Coloquei ums textos em baixo, para mostrar que a barra do cabeçalho apenas ficará quando você mover em cima da tabela, quando você descer a rolagem e ultrapassar a tabela esssa barra irá sumir */
+        }
        
         /* em nossa tag abaixo colocamos tbody > tr:nth-child(2n) por que não queremos que todos os TR sejam alterados, a minha ideia é apenas os que estão dentro de tbody, porém desta forma temos um número dentro dos parenteses, esse número funciona assim: (2n) a cada dois números, o segundo irá ser modíficado conforme sua configuração.Eu deixei cinza, então vai ficar, um branco e um cinza, assim por diante... */
-        tbody > tr:nth-child(odd){ /* (2n-1) /* você pode colocar (odd) dentro dessa tag, odd significa impar, e vai dar o memso efeito atual que é chamado de efeito zebrado, não vai ficar exatamente igual, por que é impar, mas o efeito será o mesmo. (odd) e (2n-1) da o mesmo efeito, (even) é par.*/
+        tbody > tr:nth-child(odd){ /* (2n-1) /* você pode colocar (odd) dentro dessa tag, odd significa impar, e vai dar o mesmo efeito atual que é chamado de efeito zebrado, não vai ficar exatamente igual, por que é impar, mas o efeito será o mesmo. (odd) e (2n-1) da o mesmo efeito, (even) é par.*/
             background-color: rgb(180, 176, 176);
         } /* aqui nós fizemos par e impar, isso que dizer que um irá ter uma cor e o outro terá outra com, azul,cinza e depois azul e cinza e assim vai... Impar e Par.  impar é o zinza (odd) par é o azul (even).Da para colocar imagens se desejar.*/
         tbody > tr:nth-child(even) /* (2n)*/{
@@ -53,7 +65,7 @@
             font-size:22px;
             font-weight: bolder;          
             color: white;
-           background-image: url('imagens/fundo-cinza.jpg');
+            background-image: url('imagens/fundo-cinza.jpg');
             padding: 10px;
             text-shadow:  -2px 2px 0px black;
 }
@@ -235,6 +247,8 @@
            </tr>
         </tfoot>
     </table>
-    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dicta et incidunt sequi expedita, obcaecati quasi, magnam odit delectus accusamus voluptatum dolorum perferendis. Maiores non similique animi commodi in nesciunt.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nobis dolore aspernatur. Consequuntur praesentium, earum illum in ratione consequatur asperiores aspernatur tempore sequi? Et incidunt nesciunt error dolores voluptate ipsa.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nisi veniam facilis nihil asperiores eveniet consectetur aut officia, hic, ducimus, adipisci sunt. Quae quia, illo quidem ipsa ab dolore possimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ex ipsum ab, commodi a, explicabo libero aliquid excepturi magni obcaecati animi reprehenderit? Labore iure perspiciatis amet tenetur voluptatem dolorem cum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet modi mollitia hic provident minus voluptas molestiae, accusantium aut officiis consectetur odit quam impedit natus esse qui corporis! Maxime, labore consequuntur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nobis alias impedit temporibus fuga adipisci iste corrupti deleniti voluptatibus, in iure corporis quod veniam. Illum quas sed ut ullam enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias labore incidunt expedita ratione ea placeat illo eaque eos, nostrum harum saepe qui deleniti libero officiis. Inventore obcaecati vitae aspernatur provident.lore Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure adipisci ex ab, inventore porro vel! Culpa, doloremque necessitatibus dolorem ullam quo consequatur minus maiores possimus quam veritatis placeat est adipisci. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nihil rerum ratione vero consequatur eius, esse consequuntur debitis doloremque unde iusto molestiae dolores ea expedita officiis quia placeat laborum commodi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sed quaerat eos eveniet dolorum soluta, aspernatur perspiciatis possimus voluptate facilis numquam aut laudantium quis voluptatibus odit, quasi explicabo exercitationem nobis? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor eos nam perspiciatis. Minus nam sapiente voluptatibus beatae tempora rem unde, labore quas cupiditate facilis atque! Praesentium sapiente natus accusantium illum.</p>
 </body>
 </html>
