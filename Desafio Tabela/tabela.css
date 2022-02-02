@@ -1,0 +1,29 @@
+@charset "UTF-8"; /* essa regra serve para quando eu trabalhar com estilos externos, serve para não termos problemas com acentuações e caracter especiáis.*/
+
+table {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 580px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: auto;
+}
+thead th {
+    position: sticky;
+    top:0
+}
+td {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px;
+}
+
+
+th{
+    background-color: gray;
+    color: white;
+    padding: 0%;
+}
+p {
+    width: 580px;
+   margin: auto;
+}

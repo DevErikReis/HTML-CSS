@@ -8,28 +8,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>Mesclagem de tabelas</h1>
     <table>
         <tr>
-            <td>A</td>
-            <td>B</td>
-            <td>C</td>
+            <td colspan="3">A</td> <!--A tag colspan, usamos ela aqui para fazer com que a nossa coluna A ocupe 3 colunas, em quanto as outras ocupam apenas uma.Vai ocupar para a direita.-->
+            
         </tr>
         
         <tr>
-            <td>D</td>
+            <td rowspan="3">D</td> <!-- essa tag faz com que ocupe colunas para baixo, Pensa o seguinte, se eu tirar as colunas que estão a esquerda e abaixo da coluna D, que são a G e J, automáticamente a coluna H e K vão para esquerda ocupando aquele espaço e deixando o espaço a direita vazio. O que queremos aqui é que isso não aconteça então usamos a tag ROWSPAN que ocupa colunas para baixo, e colocamos o valor de colunas, no caso 2. Quer dizer, tive que usar 3 porque usando 2 não deu certo como gostaria, mas 3 deu certo, faça seus testes. Então se eu colocar apenas 2, ela vai ocupar a coluna que ja está ocupando e mais uma, colocando 3 ela vai ocular a coluna que ja ocupa e mais duas, totalizando 3.-->
             <td>E</td>
-            <td>F</td>
+            <td rowspan="2">F</td>
         </tr>
         
         <tr>
-            <td>G</td>
+           
             <td>H</td>
-            <td>I</td>
+           
         </tr>
         <tr>
-            <td>J</td>
-            <td>K</td>
-            <td>L</td>
+            
+           
+            <td colspan="2">L</td>
         </tr>
     </table>
     
