@@ -57,15 +57,17 @@
         <caption>Filmes favoritos</caption>
          
 <thead>
+    <!--O scope "col" = exemplo: o titulo grupos, quais são os dados que percentem ao grupo nessa tabela? mulheres e homens. Como está em conluna, ou seja, i titulo em cima e as informações abaixo, irei usar o "col". Nome ali também, os dados dos nomes estão abaixo. Agora Filmes, filmes são 3 colunas e as informações dos filmes estão abaixo, então devo usr "colgroup"-->
     <tr>
-        <th>Grupo</th>
-        <th>Nomes</th>
-        <th colspan="3">Filmes</th>
+        <th scope="col">Grupo</th>
+        <th scope="col">Nomes</th>
+        <th colspan="3" scope="colgroup">Filmes</th>
     </tr>
 </thead>
 <tbody>
+    <!-- Mulheres, o scope usado aqui já sera outro, porque as informações das mulheres estão a direita, caso eu use scope 'Row' irá pegar apenas a ana maria santos, como são 3 nomes e 3 colunas vamos usar 'rougroup'-->
     <tr>
-        <td rowspan="3">Mulheres</td>
+        <th rowspan="3" scope="rowgroup">Mulheres</th>
         <td>Ana Maria Santos</td>
         <td>Alien</td>
         <td>Rambo</td>
@@ -87,7 +89,8 @@
     </tr>
 
     <tr>
-        <td rowspan="3">Homens</td>
+        <!-- aqui será o mesmo esquema-->
+        <th rowspan="3" scope="rowgroup">Homens</th>
         <td>Bruno Mendonça</td>
         <td>Intocáveis</td>
         <td>Amnésia</td>
@@ -113,6 +116,13 @@
   
 
 </tbody>
+<tfoot>
+    <tr>
+        <!--Aqui como é apenas um dado a direita (18), basta apenas colocar 'row'-->
+        <th colspan="4" scope="row">total</th>
+        <td>18</td>
+    </tr>
+</tfoot>
 
 
     </table>
