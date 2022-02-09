@@ -5,6 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio.</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+        }
+        table {
+            
+        }
+        td, th {
+            border: 1px solid black;
+        }
+
+
+
+
+    </style>
+    
 </head>
 <body>
     <!--HIERARQUIA DE TABELAS  (simples)
@@ -23,61 +39,64 @@
                 tr,td,th -->
     <h1>Tabela de notas </h1>
     <table>
-        <tr>
-            <th rowspan="2">Area</th>
-            <th rowspan="2">diciplinas</th>
-            <th>Notas</th>
-            <th>Média</th>
-        </tr>
-        <tr>
-            <th>Nota 1</th>
-            <th>nota 2</th>
-        </tr>
-        <tr>
-            <td rowspan="04">Exatas</td>
-            <td>Matemática</td>
-            <td>00</td>
-            <td>00</td>
-            <td>00</td>
-        </tr>
-        <tr>
-            <td>Física</td>
-            <td>00</td>
-            <td>00</td>
-            <td>00</td>
-        </tr>
-        <tr>
-            <td>Química</td>
-            <td>00</td>
-            <td>00</td>
-            <td>00</td>            
-        </tr>
-        <tr>
-            <td>Biologia</td>
-            <td>00</td>
-            <td>00</td>
-            <td>00</td>
-        </tr>
-        <tr>
-            <th colspan="5">Média de Exatas</th>            
-        </tr>
-        <tr>
-            <td rowspan="2">Humanas</td>
-            <td>História</td>
-            <td>00</td>
-            <td>00</td>
-            <td>00</td>
-        </tr>
-        <tr>
-            <td>Gografia</td>
-            <td>00</td>
-            <td>00</td>
-            <td>00</td>
-        </tr>
-        <tr>
-            <th colspan="">Média de humanas</th>
-        </tr>
-
+        <thead>
+            <tr>
+                <th rowspan="2">Area</th>
+                <th>diciplinas</th>
+                <th>Notas</th>
+                <th rowspan="2">Média</th>
+            </tr>
+            <tr>
+                <th>Nota 1</th>
+                <th>nota 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="04">Exatas</td>
+                <td>Matemática</td>
+                <td>00</td>
+                <td>00</td>
+                <td>00</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td>00</td>
+                <td>00</td>
+                <td>00</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td>00</td>
+                <td>00</td>
+                <td>00</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>00</td>
+                <td>00</td>
+                <td>00</td>
+            </tr>
+            <tr>
+                <th colspan="5">Média de Exatas</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Humanas</td>
+                <td>História</td>
+                <td>00</td>
+                <td>00</td>
+                <td>00</td>
+            </tr>
+            <tr>
+                <td>Gografia</td>
+                <td>00</td>
+                <td>00</td>
+                <td>00</td>
+            </tr>
+            <tr>
+                <th colspan="">Média de humanas</th>
+            </tr>
+        </tbody>
 
 
     </table>
