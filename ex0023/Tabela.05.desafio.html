@@ -10,13 +10,31 @@
             font-family: 'Courier New', Courier, monospace;
         }
         table {
-            
+            border-collapse: collapse;
+            margin: auto;
+           
         }
         td, th {
             border: 1px solid black;
+            padding: 7px;
+            
         }
-
-
+        th.a1 {
+         color: white;
+        }
+            th{
+                background-color: grey;
+                color: white;
+                text-align: left;
+                font-size: 1.1em;
+                
+            }
+        thead th {
+            background-color: grey;
+            color: rgb(221, 219, 219);
+            text-align: center;
+            
+        }
 
 
     </style>
@@ -41,9 +59,9 @@
     <table>
         <thead>
             <tr>
-                <th rowspan="2">Area</th>
-                <th>diciplinas</th>
-                <th>Notas</th>
+                <th rowspan="2"class="a1">Área</th>
+                <th rowspan="2">Diciplinas</th>
+                <th colspan="2">Notas</th>
                 <th rowspan="2">Média</th>
             </tr>
             <tr>
@@ -53,7 +71,7 @@
         </thead>
         <tbody>
             <tr>
-                <td rowspan="04">Exatas</td>
+                <td rowspan="04"><b>Exatas</b></td>
                 <td>Matemática</td>
                 <td>00</td>
                 <td>00</td>
@@ -78,10 +96,11 @@
                 <td>00</td>
             </tr>
             <tr>
-                <th colspan="5">Média de Exatas</th>
+                <th colspan="4">Média de Exatas</th>
+                <td style="color: white;background-color: grey;">00</td>
             </tr>
             <tr>
-                <td rowspan="2">Humanas</td>
+                <td rowspan="2"><b>Humanas</b></td>
                 <td>História</td>
                 <td>00</td>
                 <td>00</td>
@@ -94,7 +113,8 @@
                 <td>00</td>
             </tr>
             <tr>
-                <th colspan="">Média de humanas</th>
+                <th colspan="4">Média de humanas</th>
+                <td style="color: white;background-color: grey;">00</td>
             </tr>
         </tbody>
 
