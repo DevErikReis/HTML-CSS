@@ -27,21 +27,45 @@
                 font-size: 1.3em;
                 border: 1px solid black;
                 padding: 8px;
-                
             }
-            td{
-                font-weight:bold;
-                font-size: 1.1em;
+            tr.destaque {
+                background-color: greenyellow;
             }
+            /*não necessáriamente preciso de colocar o "col" que é a tag que estou modificando, mas é bom colocar para sabemos identificar */
+               col.nome{
+                   background-color: blue;
+               }        
+                   /* posso juntar essas duas tags 
+                   col.sexo{}
+                   col.idade{}
+                   */
+                  /* col.sexo, col.idade {
+                       background-color: blueviolet;} posso usar para configurar duas tags dessa forma.*/
+                   col.grupo {
+                       background-color: blueviolet;
+                   }
+                    col.profissão{} 
             
     </style>
 </head>
 <body>
+    <h1>Exercicio de tabela</h1>
     <table>
-        <h1>Exercicio de tabela</h1>
+        <!--col =  modifica uma coluna 
+        colgroup = modifica um grupo de colunas 
+    Caso eu queira modificar uma coluna inteira uso a tag colgroup e crio uma classe para ela e depois configuro com o css, igual está acima...
+ou eu posso usar uma classe específica e usa a tag span junto dela, tipo assim:
+<col class"grupo" span "2" aqui nesse caso vou estar colocando em duas colunas seguidas, tirando então por exemplo a coluna sexo e idade, como ja configurei a a de nome, a sequencia seria essa -->
+
+        <colgroup>
+            <col class="nome">
+            <col class="grupo" span="3">
+            <col class="profissão">
+        </colgroup>
+        
         <caption>Caderno</caption>
         <tr>
-            <th scope="col">Nome</th>
+            <th scope="colgroup">Nome</th>
             <th scope="col">Sexo</th>
             <th scope="col">Idade</th>
             <th scope="col">Profissão</th>
@@ -51,6 +75,42 @@
             <td>F</td>
             <td>25</td>
             <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>F</td>
+            <td>39</td>
+            <td>Médica</td>
+        </tr>
+        <tr>
+            <td>Otávio</td>
+            <td>M</td>
+            <td>22</td>
+            <td>Nutricionista</td>
+        </tr>
+        <tr>
+            <td>Cláudio</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Programador</td>
+        </tr>
+        <tr class="destaque">
+            <td>Gustavo</td>
+            <td>M</td>
+            <td>42</td>
+            <td>Professor</td>
+        </tr>
+        <tr>
+            <td>Hélio</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Vendedor</td>
+        </tr>
+        <tr>
+            <td class="destaque">Carine</td>
+            <td>F</td>
+            <td>29</td>
+            <td>Psicóloga</td>
         </tr>
     </table>
     
