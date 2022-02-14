@@ -40,12 +40,19 @@
                    col.idade{}
                    */
                   /* col.sexo, col.idade {
-                       background-color: blueviolet;} posso usar para configurar duas tags dessa forma.*/
+                       background-color: blueviolet;} posso usar para configurar duas tags ou mais dessa forma.*/
                    col.grupo {
                        background-color: blueviolet;
                    }
-                    col.profissão{} 
-            
+                    col.profissão{ 
+
+                    } 
+                    .amarelo {
+                        background-color: yellow;
+                    }
+                    .azul {
+                        background-color: blue;
+                    }
     </style>
 </head>
 <body>
@@ -53,16 +60,24 @@
     <table>
         <!--col =  modifica uma coluna 
         colgroup = modifica um grupo de colunas 
-    Caso eu queira modificar uma coluna inteira uso a tag colgroup e crio uma classe para ela e depois configuro com o css, igual está acima...
+    Caso eu queira modificar uma coluna inteira uso a tag colgroup (Coluna de cima para baixo) e crio uma classe para ela e depois configuro com o css, igual está acima...
 ou eu posso usar uma classe específica e usa a tag span junto dela, tipo assim:
-<col class"grupo" span "2" aqui nesse caso vou estar colocando em duas colunas seguidas, tirando então por exemplo a coluna sexo e idade, como ja configurei a a de nome, a sequencia seria essa -->
-
-        <colgroup>
-            <col class="nome">
-            <col class="grupo" span="3">
-            <col class="profissão">
-        </colgroup>
+<col class"grupo" span "2" aqui nesse caso vou estar colocando em duas colunas seguidas, posso então tiran por exemplo a coluna sexo e idade, como ja configurei a de nome, a sequência seria essa.
+Se eu quizer preencher a linha da esquerda para direita devo somente configurar um CSS para tag TR que irá configurar a linha inteira da esqueda para direita, para eu configurar uma coluna(de cima para baixo) devo usar o col, se for a cluna inteira, colgroup. -->
+            <!-- Veja essa tag por exemplo, fiz uma classe de cor para cada, posso colocar qualquer nome, coloquei o nome da classe com o mesmo nome da cor e ficom em sequência. -->
+        <!--<colgroup>
+            <col class="amarelo">
+            <col class="azul">
+            <col class="amarelo">
+            <col class="azul">
+        </colgroup> 
+    logo abaixo segue a mesma analogia, cada classe ficou de acordo com a cor que coloquei.-->
+        <col class="nome">
+        <col class="grupo" span="3">
+        <col class="profissão">
         
+        <!--uma coisa muito importante que percebi também é que não importa o nome que você dê para o scope do colgroup acima, ela sempre independente do nome da coluna, sempre irá seguir a sequência, caso configure apenas a coluna "profissão", que é a ultima, ela não irá configurar a ultima e sim a primeira, o jeito mais prático que encontrei em configurar as colunas é usando o span."
+        Posso também criar uma classe para cada uma das tags col e para melhor idêntificação da cor, coloco o nome da classe com a cor que desejo.  -->
         <caption>Caderno</caption>
         <tr>
             <th scope="colgroup">Nome</th>
