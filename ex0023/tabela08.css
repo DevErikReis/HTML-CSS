@@ -9,10 +9,11 @@ table {
     width: 580px;
     margin:auto;
     border-collapse: collapse;
+    color: white
 }
-th .td {
+th, td {
   
     border: 1px solid black;
-
+    padding: 8px;
 
 }
