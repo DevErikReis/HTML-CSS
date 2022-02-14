@@ -1,0 +1,18 @@
+@charset "UTF-8";
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+caption {
+    background-color: grey;
+}
+table {
+    width: 580px;
+    margin:auto;
+    border-collapse: collapse;
+}
+th .td {
+  
+    border: 1px solid black;
+
+
+}
