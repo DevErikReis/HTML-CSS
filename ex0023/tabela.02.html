@@ -32,14 +32,14 @@
         }
         thead > tr > th {
             position: sticky;
-            top:-1px; /* Quando coloco top 0, estou dizendo que ele vai colar na parte, ou seja, na parte de cima do nosso site (top). Ele ficou fixo, mesmo quando rola para baixo ela fica la em cima fixo. Posso trabalhar com pixel também aqui. No Chrome ficou normal, mas no Edge por exemplo, ficou uma leve separação entre o começo do site e a barra do cabeçalho, então para corrigir isso deixei com -1px. fiz um teste e se você deixar 12px por exemplo a separação fica bem grande e vioê consegue ver o fundo por que meio que o nosso cabeçalho ali desce, caso você coloque 70px o cabeçalho fica fixo no meio da tela. Ficoi bom com 1px;*/
+            top:-1px; /* Quando coloco top 0, estou dizendo que ele vai colar na parte, ou seja, na parte de cima do nosso site (top). Ele ficou fixo, mesmo quando rola para baixo ela fica la em cima fixo. Posso trabalhar com pixel também aqui. No Chrome ficou normal, mas no Edge por exemplo, ficou uma leve separação entre o começo do site e a barra do cabeçalho, então para corrigir isso deixei com -1px. fiz um teste e se você deixar 12px por exemplo a separação fica bem grande e vicê consegue ver o fundo por que  o nosso cabeçalho ali desce, caso você coloque 70px o cabeçalho fica fixo no meio da tela. Ficou bom com 1px;*/
             background-image: url('imagens/fundo.jpg');
             /* agora com o fundo da nossa tag, quando você desce a página fica la o estado, população e a porcentagem no topo da tela, você pode rolar para baixo que ela ainda continua fixo. */
-            /* Coloquei ums textos em baixo, para mostrar que a barra do cabeçalho apenas ficará quando você mover em cima da tabela, quando você descer a rolagem e ultrapassar a tabela esssa barra irá sumir */
+            /* Coloquei ums textos em baixo, para mostrar que a barra do cabeçalho apenas ficará quando você mover em cima da tabela, quando você descer a rolagem e ultrapassar a tabela essa barra irá sumir */
         }
        
         /* em nossa tag abaixo colocamos tbody > tr:nth-child(2n) por que não queremos que todos os TR sejam alterados, a minha ideia é apenas os que estão dentro de tbody, porém desta forma temos um número dentro dos parenteses, esse número funciona assim: (2n) a cada dois números, o segundo irá ser modíficado conforme sua configuração.Eu deixei cinza, então vai ficar, um branco e um cinza, assim por diante... */
-        tbody > tr:nth-child(odd){ /* (2n-1) /* você pode colocar (odd) dentro dessa tag, odd significa impar, e vai dar o mesmo efeito atual que é chamado de efeito zebrado, não vai ficar exatamente igual, por que é impar, mas o efeito será o mesmo. (odd) e (2n-1) da o mesmo efeito, (even) é par.*/
+        tbody > tr:nth-child(odd){ /* (2n-1) /* você pode colocar (odd) dentro dessa tag, odd significa impar, e vai dar o mesmo efeito atual que é chamado de efeito zebrado, não vai ficar exatamente igual, por que é impar, mas o efeito será o mesmo. (odd) e (2n-1) da o mesmo efeito, (even) é par e odd é impar.*/
             background-color: rgb(180, 176, 176);
         } /* aqui nós fizemos par e impar, isso que dizer que um irá ter uma cor e o outro terá outra com, azul,cinza e depois azul e cinza e assim vai... Impar e Par.  impar é o zinza (odd) par é o azul (even).Da para colocar imagens se desejar.*/
         tbody > tr:nth-child(even) /* (2n)*/{
