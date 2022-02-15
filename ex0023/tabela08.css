@@ -24,10 +24,11 @@ div#container { /* dentro dessa tag você tem  algumas opções: overflow que s�
     Como queremos apenas resolver a rolagem lateral, vamos usar o- overflow-x.
     Essa tag faz com que abra uma rolagem apenas na tabela.*/ 
     overflow-x: auto;
-    width: 50vw;
+    margin:auto; /* deixei essa tag aqui por que ela cancelou a configuração da tah "table". a Tabela até aumentou, porque o max width da tag table não esta funconando por conta dessa tag que criamos aqui. A tabela fica no tamanho padrão, vou deixar la em cima dessse jeito mesmo, para vocês entenderem sobre o que  estou falando.*/
+    
 
 }
 p {
-    max-width: 500px;
+    max-width: px;
     margin: auto;
 }
