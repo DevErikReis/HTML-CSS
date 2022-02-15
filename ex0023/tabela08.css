@@ -20,9 +20,11 @@ th, td {
 tr:nth-child(even) {
     background-color: blueviolet;
 }
-div#container { /* dentro dessa tag voCê algumas opções: overflow que são os dois eixos, overflow-y: é só rolagem vertical, overflow X : que é somente rolagem horizontal.
-    Como queremos apenas resolver a rolagem lateral, vamos usar o- overflow-x. */ 
+div#container { /* dentro dessa tag você tem  algumas opções: overflow que são os dois eixos, overflow-y: é só rolagem vertical, overflow X : que é somente rolagem horizontal.
+    Como queremos apenas resolver a rolagem lateral, vamos usar o- overflow-x.
+    Essa tag faz com que abra uma rolagem apenas na tabela.*/ 
     overflow-x: auto;
+    width: 50vw;
 
 }
 p {
