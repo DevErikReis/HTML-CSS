@@ -5,6 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>listas</title>
+    <style>
+        p{
+            background-color: black;
+            color: white;
+            max-width: 500px;
+        }
+        dt {
+  font-weight: bold;
+        }
+        dl.horizontal-definition-list {
+    display: table;
+    min-width: 400px;
+    border: 1px solid black;
+}
+
+.horizontal-definition-list dt, .horizontal-definition-list dd {
+    padding: 2% 10%;
+    border: 1px solid black;
+}
+
+.horizontal-definition-list dt {
+    display: table-cell;
+    text-align: right;
+    white-space: nowrap;
+    font-weight: 600;
+    background: gold;
+    padding-right: 10px;
+}
+
+.horizontal-definition-list dd {
+    display: table-cell;
+    background: silver;
+}
+
+.horizontal-definition-list dd.line-break {
+    display: table-row;
+}
+    </style>
 </head>
 <body>
 
@@ -36,10 +74,10 @@
             <li>gears of war 2</li>
             <li>gears of war 3</li>
         </ul>
-        <li>Gears of war julgamente</li>
+        <li>Gears of war julgament</li>
     </ul>
     <p>O Gears 4 veio no xbox one.</p>
-    <li>playstatio</li>
+    <li>playstation</li>
     <ul type="circle">
         <li>The last of us parte 02</li>
         <li>Bloodborne</li>
@@ -54,5 +92,50 @@
     <dt>CSS</dt>
     <dd><i>Linguagem de marcação para acrianção de um site</i></dd>
     <dt><b>JavaScript</b></dt>
+    <dd>Linguagem de Programação</dd>
+   
+        <!--
+            Até onde eu sabia no HTML existiam apenas dois tipos de lista. Listas Ordenadas <ol><li> e Lista não ordenada <ul><li>. Mas aparentemente existe um terceiro tipo de lista, que é a Definition List (lista de definição) <DL> <DT> e <DD>
+        -->
+        <br>
+
+          <p>Até onde eu sabia no HTML existiam apenas dois tipos de lista. Listas Ordenadas "ol" "li" e Lista não ordenada "ul" "li' .Mas aparentemente existe um terceiro tipo de lista, que é a Definition List (lista de definição) "DL" "DT" e "DD"</p>
+          <h2>Exemplo:</h2>
+          <dl>
+            <dt>Aqui fica o item</dt>
+            <dd>
+               Aqui fica a definição do item
+            </dd>
+            <dt>Lorem ipsum</dt>
+            <dd>
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis mollis est, at porttitor nisi. Curabitur tempor sollicitudin turpis, eget euismod massa accumsan vitae. Vivamus efficitur vitae elit vel luctus. Sed blandit vehicula ultrices.
+            </dd>
+            <dt>Lorem ipsum</dt>
+            <dd>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis mollis est, at porttitor nisi. Curabitur tempor sollicitudin turpis, eget euismod massa accumsan vitae. Vivamus efficitur vitae elit vel luctus. Sed blandit vehicula ultrices.
+            </dd>
+          </dl>
+          <h2>Exemplo para lista de definições (com relativa estilização, para facilitar entendimento)</h2>
+          <dl class="horizontal-definition-list">
+            <dt>Termo 1</dt>
+            <dd>Definição 1</dd>
+            <dd class="line-break"></dd>
+            
+            <dt>Termo 2</dt>
+            <dd>Definição 2</dd>
+            <dd class="line-break"></dd>
+            
+            <dt>Termo 3</dt>
+            <dd>Definição 3<br>(várias linhas, sem problema)</dd>
+            <dd class="line-break"></dd>
+        </dl>
+
+        <!--Aqui eu peguei um exemplo da internet e analisei, mudei algumas coisas por que estava sem, como a borda por exemplo, mas foram criado classes para cada configuração. Perceba que a horizontal-definition-list está apenas no começo e dentro do DL, porém todas as outras tags então dentro da dl, então eu posso configurar cada uma delas sem precisar ficar colocando class dentro de cada uma das tags, observe no nosso CSS das class que, está assim:.horizontal-definition-list dt, .horizontal-definition-list dd , percebe que ele apenas acrescentou a DD e a DT e funcinou? Percebi isso por que não tem class  "horizontal-definition-list" em todos as tags DT, DD, apenas no DL. Se eu fosse fazer sem saber dessa informação, iria colocar a classe horizontal-definition-list em todos os TD e DD somente para colocar a borda, border: 1px solid black; / sacou a ideia?-->
+    <ol>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+    </ol>
+    <!--Se não colocar o tipo irá ficar como 1,2,3,4...-->
 </body>
 </html>

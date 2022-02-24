@@ -28,13 +28,38 @@ e par
 <blockquote cite="https://www.google.com.br/books/edition/Fundamentos_de_HTML5_e_CSS3/2iPYCQAAQBAJ?hl=pt-BR&gbpv=1&dq=html5&printsec=frontcover">
     A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem os blocos de texto.
 </blockquote>
+<!--
+    O Elemento HTML <blockquote> (ou Elemento HTML de citação de bloco) indica que o texto incluído é uma longa citação. Normalmente, este é processado visualmente pelo recuo (ver Notas sobre como mudá-lo). A URL para a fonte da citação pode ser dada usando o atributo cite, enquanto uma representação de texto da fonte pode ser dada usando o <cite> elemento.
+        <blockquote cite="http://developer.mozilla.org">
+  <p>Esta é uma citação tirada da
+  Mozilla Developer Center.</p>
+</blockquote>
+-->
+O Elemento HTML "blockquote" (ou Elemento HTML de citação de bloco) indica que o texto incluído é uma longa citação. Normalmente, este é processado visualmente pelo recuo (ver Notas sobre como mudá-lo). A URL para a fonte da citação pode ser dada usando o atributo cite, enquanto uma representação de texto da fonte pode ser dada usando o < cite > elemento.
+
+
+<blockquote cite="http://developer.mozilla.org">
+    <p>Esta é uma citação tirada da
+    Mozilla Developer Center.</p>
+  </blockquote>
 </p>
 <h2>Abreviações</h2>
 <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr> e estou adorando!</p>
 <p><abbr title="Homem mais lindo do mundo">Erik</abbr></p> 
+<p><abbr title="A mulher mais linda do mundo">Carine</abbr></p>
 <h2>Texto invertido</h2>
 <p><bdo dir="rtl">o erik eh gostoso</bdo></p>
-
+<br>
+<!-- Muda a direção do texto
+Direção de texto neste elemento. Os valores possíveis são:
+ltr: Indica que o texto ficará da Esquerda para a Direita (Left-To-Right).
+rtl: Indica que o texto ficará da Direita  para a Esquerda (Reft-To-Light). -->
+<p>Este texto ficará da esquerda para a direita.</p>
+<p><bdo dir="rtl">Este texto ficará da direita para a esquerda.</bdo></p>
+<p><bdo dir="ltr">Esse texto ficará da  da esquerda para direita </bdo></p>
+<!--
+    O elemento HTML quebra-de-linha <br> produz uma quebra de linha em um texto (carriage-return). É útil para escrever poemas ou um endereço, onde a divisão de linha é significante. Não use <br> para aumentar o espaço entre as linhas de texto; para isso use a propiedade CSS margin ou o elemento <p>.
+-->
 
 </body>
 </html>
