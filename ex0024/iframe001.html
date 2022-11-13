@@ -5,17 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de Iframe</title>
+
+    <style>
+        iframe {
+            width: 600px;
+            height: 600px;
+            border: 2px dashed black;   
+                    
+        }
+    </style>
 </head> 
 <body>
     <h1>Testando o uso  de um iframe</h1>
+    
     <p>Acessando o site do
-       <iframe src="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-4-de-5-40-horas/aulas/modulo-04-2/modulos/capitulo-22-aula-1-o-iframe-ainda-pode-ser-usado/" frameborder="0"></iframe>
+       <iframe src="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-4-de-5-40-horas/aulas/modulo-04-2/modulos/capitulo-22-aula-1-o-iframe-ainda-pode-ser-usado/" frameborder="0" height="500" width="500"></iframe>
         para aprender a programar</p>
-        <p>o site do <iframe src="https://www.google.com.br/" frameborder="0"></iframe> também é muito legal</p>
+
+        <p>o site do
+             <iframe src="https://www.google.com.br/" frameborder="0"> <a href="https://www.google.com.br/" target="_blank">google</a>  
+            
+            </iframe>
+             
+             também é muito legal. Pena que não funciona dentro do iframe.</p>
+        
+        <p>O repositório do Guanabara <iframe src="https://gustavoguanabara.github.io" frameborder="1"> <!--frameborder -> essa tag apenas aceita o valor 0 ou 1, usando o 0 tira a borda, usando o 1 coloca borda, vc pode colocar qqr valor acima que não irá ter outro efeito, irá apenas aparecer uma borda se o valor for diferente de 0.-->
+
+            <a href="https://gustavoguanabara.github.io">github do Guanabara</a>
+        </iframe> também é bem legal. <!-- Eu coloquei o link aqui porque se caso o navegador não for compatível com o iframe apareça então o site. Caso o iframe não funcione no navegador irá aparecer então o link. -->
+        </p>
+        <!-- O tamanho padrão de um iframe é de 300x150 px-->
+        
+        <p>site do <a href="https://www.facebook.com/">Facebook</a></p>
 
     
 </body>
 </html>
 <!--
-    Bom como estou muito tempo sem estudar html, css3 e java script estou relembrando tudo. Aqui nós inicialmente colocamos um link com a tag a usando o control+shift+p e envelopamos, é só você colocar o link dentro e colocar o target _ blank para abrir em outra pagina, mas vamos usar o iframe no lugar da tag "A".
+    Bom como estou muito tempo sem estudar html, css3 e java script estou relembrando tudo. Aqui nós inicialmente colocamos um link com a tag "a" usando o control+shift+p e envelopamos, é só você colocar o link dentro e colocar o target _ blank para abrir em outra pagina, mas vamos usar o iframe no lugar da tag "A".
+    Os iframes não vão funcionar em todos os navegadores de celular, por que muitos não tem suporte ao iframe.
+    Caso o iframe não funcione, dentro do iframe você coloca uma frase entre parênteses informando que não é suportado ou você pode colocar o link do site que você gostaria que aparecesse no seu iframe, então você pode criar uma tag A e colocar o link do seu site lá, caso não apareça o iframe, irá aparecer o seu link do site, acima irei fazer com o google que não aparece pra gente por que o google não deixa. Nãao funcionou no google porque o navegador suporta o iframe, porém o google não deixa aparecer, caso o navegador não suportasse, ai sim iria aparecer.
+
+A tag scolling=”auto” -> é o padrão se o conteúdo do iframe exceder o tamanho do frame, será criado uma barra de rolagem.
+scolling=”yes” -> mesmo que o conteúdo estiver cabendo dentro do iframe e não necessite de barra de rolagem ele irá criar da mesma forma.
+scolling=”no” ->  na regra ele serve para retirar a barra de rolagem, mesmo que seja preciso da barra de rolagem para ver todo conteúdo, ou seja ele retira a barra de rolagem.  No navegador google chrome usando no Windows não funcionou, porém usando no sistema operacional mec e usando o mesmo navegador google chrome funcionou, então essa tag pode não funcionar 100%
+
 -->
