@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframe</title>
+    <style>
+        body{
+            font-style: normal;
+            font-family:Arial, Helvetica, sans-serif ;
+            }
+            #tela{
+                width: 95vw;
+                border: 2px solid black;
+                height: 400px;
+            }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum facere, beatae earum suscipit natus aut explicabo hic ex. Dolorum sunt adipisci quaerat veritatis magnam enim fugit placeat illum, non beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, eum? Delectus, aliquam! Aperiam ea quis sapiente nulla optio aliquam, sit reiciendis, porro animi magni iusto quisquam quod facere! Cumque, ipsam!</p>
+    <ul>
+        <li><a href="Nova pasta/pag001.html"target="frame">primeira página</a></li> <!-- o target aqui fz parte da configuração para a nossa página abrir dentro do iframe, sem sair da página atual. Quando vc clica abre dentro do iframe.-->
+        <li><a href="Nova pasta/pag002.html"target="frame">segunda página</a></li> <!-- Criamos uma nova página e fizemos a mesma configuração.-->
+        <li><a href="Nova pasta/pag003.html"target="frame">terceira página</a></li> 
+    </ul>
+
+     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, impedit nostrum ut officiis veritatis minus adipisci iste repellat officia repudiandae, quidem suscipit dolore dolor aut reprehenderit quis voluptate saepe distinctio?
+        <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita iure illum perferendis officiis consectetur eos illo eveniet magnam in enim, nihil fugit laborum? Obcaecati molestias fugiat mollitia dolorem cupiditate molestiae.
+     </p>
+     <iframe id="tela" name= "frame" src="#" frameborder="0"> <!-- Aqui fizemos um ID para configurar essa nossa tag que no caso é o iframe, colocamos o NAME para podemos colocar um target dentro do nosso primeiro link "primeira página" desta forma, quando clicar em cima da primeira página, a pagina irá abrir dentro do nosso iframe e não iniciando uma outra página, ou seja, ira continuar na mesma página e abrindo dentro do nosso iframe.-->
+        <p>Infelizmente seu navegador não é compatível com iframes.</p>
+     </iframe>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, consequatur! Asperiores, itaque ratione soluta aliquam omnis ea, iste, vel officiis commodi exercitationem quae numquam iure natus maxime corporis molestiae in?</p>
+    
+</body>
+</html>
