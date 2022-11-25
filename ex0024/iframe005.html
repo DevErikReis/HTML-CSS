@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Minha página</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio repellat, sunt perferendis deleniti libero incidunt eius consectetur, assumenda voluptatibus praesentium quas voluptate possimus ratione iste animi temporibus eligendi, placeat voluptatum!</p>
+
+    <iframe src="Nova pasta/pag005.html" name="frame" referrerpolicy="no-referrer" sandbox="sandbox allow-scripts" frameborder="1"></iframe>
+    <!--Agora lembrando que o que criamos no pag005 é um script feito com o javascript, e dependendo do site que você colocar dentro do seu script ele pode ser malicioso, se eu quizer bloquear tudo menos o scrip devo deixar o sandbox"allow-scripts" para poder permitir o script.
+        referrerpolicy="no-referrer" sandbox="sandbox" -> nessas configurações eu bloqueio tudo.
+     Fiz o teste, cliquei e realmente não acontreceu nada, bloqueou mesmo. Agora quando coloquei o allow-scripts funcionou normalemnte, Mas eu coloquei assim: sandbox="sandbox allow-scripts", não apaguei o sendbox dentro da aspas. Já o professor retirou o sandbox das aspas -->
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sint soluta asperiores quisquam assumenda harum, aperiam fuga enim minus, hic labore laborum, sunt laboriosam explicabo. Saepe totam quasi ducimus dolore.</p>
+    
+     <p> O que está aqui em baixo é apenas para teste</p>
+    <ul> <li><a href="Nova pasta/pag002.html" target="frame">pag002</a></li>
+    <li><a href="Nova pasta/pag005.html" target="frame">pag005</a></li>
+    <li><a href="Nova pasta/pag004.html" target="frame">pag004</a></li>
+    <li><a href="Nova pasta/pag001.html"target='frame'>pag001</a></li>
+</ul>
+<!--Aqui estou fazendo um teste para saber como fazer a mesma lista do exercicio iframe003, estou querendo identificar como que nossa tag "target" funciona, esse target='frame' e o name='frame' eles funcionam em conjunto pelo que parece, mas não necessáriamente precisamos de colocar "frame" podemos colocar qualquer outro nome que dará certo da mesma forma, o importante é estar o mesmo nome no 'target' e no 'name'  você coloca o name no iframe e coloca o target no seu link que é a tag 'a' conforme acima. Ser o target quando vc clicar na pag005 por exemplo, a mesma irá abrir uma nova página, com o target irá abrir dentro do seu iframe.-->
+
+</body>
+</html>

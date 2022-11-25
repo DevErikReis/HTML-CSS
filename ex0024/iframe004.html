@@ -9,9 +9,19 @@
 <body>
     <h1>Meu site principal</h1>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam id ratione nisi tempora? Laboriosam beatae maiores enim eum in illo odio quasi aut? Odio enim voluptate, unde cumque necessitatibus adipisci!</p>
-    <iframe src="Nova pasta/pag004.html" frameborder="1" sandbox="sandbox" referrerpolicy="no-referer-when-downgrade"> <!--Essa tag sandbox serve para bloquear todas as ações maliciosas de outros sites, para captura de informações por exemplo. Quando coloco a tag sandbox, ele bloqueia todo e qualquer acesso que outros sites que estejam dentro do iframe tentem fazer, como por exemplo o cadastro de pessoas, ou seja, não consegue roubar informações. Exemplo, quando você pega um outro site e coloca dentro do seu iframe, caso esse site seja um site malicioso, essa tag não irá deixar o site malicioso que está no seu iframe capturar dados dos usuários. Se você abrir o site irá ver que nosso iframe está dentro do nosso site, ou seja, criamos o pag004 e colocamos no nosso iframe004.
+    <iframe src="Nova pasta/pag004.html" frameborder="1" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer-when-downgrade"> <!--
+        Sandbox="sandbox" = seguraça total contra dados, podemos mudar, porém se você quer total proteção deixe assim.
+        Essa tag sandbox="sandbox" serve para bloquear todas as ações maliciosas de outros sites, para captura de informações por exemplo. Quando coloco a tag sandbox, ele bloqueia todo e qualquer acesso que outros sites que estejam dentro do iframe tentem fazer, como por exemplo o cadastro de pessoas, ou seja, não consegue roubar informações. Exemplo, quando você pega um outro site e coloca dentro do seu iframe, caso esse site seja um site malicioso, essa tag não irá deixar o site malicioso que está no seu iframe capturar dados dos usuários. Se você abrir o site irá ver que nosso iframe está dentro do nosso site, ou seja, criamos o pag004 e colocamos no nosso iframe004.
     A Tag referrerpolicy, que significa, política de referencia, ela nós da mais proteção também.
-referrerpolicy="no-referer-when-downgrade" esse é o valor padrão, se você quizer tornar o que está dentro do seu iframe um pouco mais limitado voce pode colocar o valor : referrerpolicy="no-referer"-->
+referrerpolicy="no-referrer-when-downgrade" esse é o valor padrão, se você quizer tornar o que está dentro do seu iframe um pouco mais limitado voce pode colocar o valor : referrerpolicy="no-referrer" Você sabe que na internet existem anuncios e para exister esses anuncios é preciso saber de informações do usuário, desta forma o google entre outros capturam dados para poder te mostrar esses anuncios, com o "no-referrer" não será possivel capturar os dados do usuário. 
+
+Mas com essas duas configurações, sandbox e no-referrer o seu formulário não irá funcionar básicamente, porque para o formulário funcionar, ele precisa de capturar dados, para isso eu faço alterações no sandbox, no momento ele esta como "sandbox="sandbox" e essa proteção não deixa agente usar o nosso formulário.
+Vamos mudar agora os códigos
+sandbox="allow-same-origin -> coisas da mesma origem (estou permitindo coisas da mesma origem)
+sandbox="allow-forms " -> Estou permitindo formulários
+sandbox="allow-scripts" Estou permitindo script.
+Coloquei os 3 para poder funcionar as 3 opções.
+-->
 
         <p>Seu navegador não é compatível</p>
     </iframe>

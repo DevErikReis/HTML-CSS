@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScripts</title>
+    <style>
+        body {
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" onclick="clicou()">clique em mim</a><!--onclick serve para capturar o click e coloquei o nome de clicou. Fazendo isso eu criei uma funcionalidade para o nosso link np caso.-->
+    <div id="saida"></div>
+    <script>
+        // a tag function cria uma função para algo que no caso é o nosso clicou ali de cima que colocamos no nosso link, tudo que eu colocar dentro das chaves irá acontecer com o "clicou" no caso.
+        function clicou() {
+            s = window.document.getElementById("saida")
+            s.innerHTML += '<p>Você clicou!</p>' //O operador de atribuição encurtado += também pode ser utilizado para concatenar strings.
+            // agora toda vez que você clicar em "clique em mim" do link acima, vai adicionar um parágrafo chamado "você clicou" na "saida" Realmente toda vez que vc clica no link vai aparecendo abaixo "você clicou", a cada click aparece um.
+        }   
+    </script>
+</body>
+</html>
